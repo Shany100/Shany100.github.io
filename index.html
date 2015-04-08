@@ -65,6 +65,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-利用hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/08/利用hexo搭建博客/" class="article-date">
+  <time datetime="2015-04-08T09:01:35.000Z" itemprop="datePublished">2015-04-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/08/利用hexo搭建博客/">利用 hexo 搭建博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="遇到的问题">遇到的问题</h2><p>利用 ‘hexo deploy’ 到 github 项目 ‘<a href="https://github.com/Shany100/hexo-blog.git" target="_blank" rel="external">https://github.com/Shany100/hexo-blog.git</a>‘ 中会出现 ‘result=56’的问题。然后根据网上提供的方案，在 /.git/config 文件中添加了以下字符段：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[http]</span><br><span class="line">	postBuffer = <span class="number">524288000</span></span><br></pre></td></tr></table></figure></p>
+<p>也没用达到预期的效果。还是报了问题。</p>
+<h5 id="解决">解决</h5><p>把 github 项目由 https 改成了 ‘git@github.com:Shany100/hexo-blog.git’，提交后是成功的。</p>
+<ul>
+<li>hexo 的版本是<pre>
+D:\dcloud\workspace\blog>hexo version
+hexo: 3.0.1
+os: Windows_NT 6.1.7601 win32 x64
+http_parser: 1.0
+node: 0.10.32
+v8: 3.14.5.9
+ares: 1.9.0-DEV
+uv: 0.10.28
+zlib: 1.2.3
+modules: 11
+openssl: 1.0.1i
+</pre>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/04/08/利用hexo搭建博客/" data-id="ci88j327h0003f8qafh098zt2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-fe-resources" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/04/08/fe-resources/" class="article-date">
@@ -95,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/08/fe-resources/" data-id="ci88hla4a0000j8qangtnmeyd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/04/08/fe-resources/" data-id="ci88j32720000f8qaw5muw3ji" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
@@ -142,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/04/08/hello-world/" data-id="ci88hla550003j8qaahtz0eos" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/04/08/hello-world/" data-id="ci88j327j0004f8qa5vrj368l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -181,7 +236,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -191,6 +246,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/04/08/利用hexo搭建博客/">利用 hexo 搭建博客</a>
+          </li>
         
           <li>
             <a href="/2015/04/08/fe-resources/">fe-resources</a>
