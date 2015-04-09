@@ -5,15 +5,18 @@
   
   <title>利用 hexo 搭建博客 | 鱼统江湖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="遇到的问题利用 ‘hexo deploy’ 到 github 项目 ‘https://github.com/Shany100/hexo-blog.git‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/config 文件中添加了以下字符段：12[http]	postBuffer = 52428">
+  <meta name="description" content="搭建教程参考了Hexo Document 和 Hexo在github上构建免费的Web应用
+遇到的问题利用 ‘hexo deploy’ 到 github 项目 ‘https://github.com/Shany100/hexo-blog.git‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用 hexo 搭建博客">
 <meta property="og:url" content="http://yoursite.com/2015/04/08/利用hexo搭建博客/index.html">
 <meta property="og:site_name" content="鱼统江湖">
-<meta property="og:description" content="遇到的问题利用 ‘hexo deploy’ 到 github 项目 ‘https://github.com/Shany100/hexo-blog.git‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/config 文件中添加了以下字符段：12[http]	postBuffer = 52428">
+<meta property="og:description" content="搭建教程参考了Hexo Document 和 Hexo在github上构建免费的Web应用
+遇到的问题利用 ‘hexo deploy’ 到 github 项目 ‘https://github.com/Shany100/hexo-blog.git‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用 hexo 搭建博客">
-<meta name="twitter:description" content="遇到的问题利用 ‘hexo deploy’ 到 github 项目 ‘https://github.com/Shany100/hexo-blog.git‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/config 文件中添加了以下字符段：12[http]	postBuffer = 52428">
+<meta name="twitter:description" content="搭建教程参考了Hexo Document 和 Hexo在github上构建免费的Web应用
+遇到的问题利用 ‘hexo deploy’ 到 github 项目 ‘https://github.com/Shany100/hexo-blog.git‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/">
   
     <link rel="alternative" href="/atom.xml" title="鱼统江湖" type="application/atom+xml">
   
@@ -85,9 +88,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="遇到的问题">遇到的问题</h2><p>利用 ‘hexo deploy’ 到 github 项目 ‘<a href="https://github.com/Shany100/hexo-blog.git" target="_blank" rel="external">https://github.com/Shany100/hexo-blog.git</a>‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/config 文件中添加了以下字符段：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[http]</span><br><span class="line">	postBuffer = <span class="number">524288000</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="搭建教程">搭建教程</h2><p>参考了<a href="http://hexo.io/docs/" target="_blank" rel="external">Hexo Document</a> 和 <a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a></p>
+<h2 id="遇到的问题">遇到的问题</h2><p>利用 ‘hexo deploy’ 到 github 项目 ‘<a href="https://github.com/Shany100/hexo-blog.git" target="_blank" rel="external">https://github.com/Shany100/hexo-blog.git</a>‘ 中会出现 ‘error: RPC failed; result=56, HTTP code = 200’的问题。然后根据网上提供的方案，在 /.git/config 文件中添加了以下字符段：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[http]</span><br><span class="line">	postBuffer = <span class="number">524288000</span></span><br></pre></td></tr></table></figure></p>
 <p>也没用达到预期的效果。还是报了问题。</p>
-<h5 id="解决">解决</h5><p>把 github 项目由 https 改成了 ‘git@github.com:Shany100/hexo-blog.git’，提交后是成功的。</p>
+<h2 id="解决了">解决了</h2><p>把 github 项目由 https 改成了 ‘git@github.com:Shany100/hexo-blog.git’，提交后是成功的。</p>
 <ul>
 <li>hexo 的版本是<pre>
 D:\dcloud\workspace\blog>hexo version
